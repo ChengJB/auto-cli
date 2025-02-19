@@ -1,7 +1,7 @@
 import {Command} from "commander"
 import {version} from "../package.json"
 import {create} from '@/command/create'
-const program = new Command('my-cli')
+const program = new Command('cjb-cli')
 program
 .version(version,'-v --version')
 .description("自定义脚手架工具")
