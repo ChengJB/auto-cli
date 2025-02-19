@@ -17,7 +17,7 @@ const gitOptions: Partial<SimpleGitOptions> ={
 export const clone = async (selectedTemplate: any) => {
   const git: SimpleGit = simpleGit(gitOptions)
   try{
-  await logger(git.clone(selectedTemplate.url, selectedTemplate.name,['-b', selectedTemplate.branch]),'Cloning template...',{
+  await logger(git.clone(selectedTemplate.url, selectedTemplate.name,['-b', `${selectedTemplate.branch}`]),'Cloning template...',{
     estimate: 5000
   })
   }catch(err){
