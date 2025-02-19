@@ -1,6 +1,6 @@
 {
   "name": "cjb-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "auto-cli 脚手架",
   "type": "module",
   "main": "index.js",
@@ -8,9 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
-  "keywords": ["Vite","typescript"],
+  "keywords": [
+    "Vite",
+    "typescript"
+  ],
   "author": "testAuthor",
-  "bin":{
+  "bin": {
     "pkg-json-bin": "bin/index.js"
   },
   "files": [
